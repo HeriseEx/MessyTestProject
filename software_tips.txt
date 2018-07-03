@@ -1,0 +1,39 @@
+-------------
+sublime:
+	shield_add:
+		127.0.0.1 sublimetext.com
+		127.0.0.1 sublimehq.com
+		127.0.0.1 45.55.255.55
+		127.0.0.1 45.55.41.223
+		127.0.0.1 license.sublimehq.com
+	license:
+		search for new
+
+mac 允许任何开发者调试:
+sudo spctl --master-disable
+
+-------------
+百度云黑科技:
+https://github.com/high-speed-downloader/high-speed-downloader
+
+-------------
+程序师(网站)
+http://www.techug.com/
+
+============================ 以下为每个模块单独配置
+
+------------- python
+python3 mac 中文编码问题  'ascii' codec can't encode characters in ordinal not in range(128)
+
+(1)
+	~/.bash_profile中添加:
+	export LANG="en_US.UTF-8"
+(2)
+	# import sys
+	# import codecs
+	# sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
+
+-------------
+自动获取网页编码方式的方法:安装第三方库chardet(安装失败的话注意文件权限问题 pip homebrew)
+pip install chardet
+chardet.detect:获取网页编码格式
